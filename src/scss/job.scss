@@ -1,0 +1,168 @@
+@import "./main.scss";
+
+
+.job-container{
+    display: flex;
+   background-color: #fff;
+   align-items: center;
+   width: 68%;
+   padding-right: 20px;
+   border-radius: 8px;
+   margin-top: 30px;
+   box-shadow: var(--primary-color) 0px  4px 10Px ;
+
+   .logo{
+    display:flex;
+   }
+
+   .left{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+   }
+&--green-border{
+    border-left:5px solid var(--primary-color)
+}
+}
+
+hr{
+    display:none;
+}
+.company{
+    display: flex;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-color);
+    cursor: pointer;
+    width: fit-content;
+    .new{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 40px;
+    padding: 3px;
+    color: white;
+    font-size: 11px; 
+   }
+   .featured{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 65px;
+    font-size: 11px;
+    padding: 3px;
+   }
+}
+
+.position{
+    font-weight: 700;
+    margin: 8px;
+    text-align: left;
+    position: relative;
+    right:8Px;
+    width: fit-content;
+}
+.position:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.details{
+    display: flex;
+    gap: 10px;
+    color: rgb(122, 121, 121);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+}
+.right{
+    display:flex;
+    align-items:center;
+    justify-content: end;
+    gap: 12px;
+    .btns{
+        background-color: var(--filter-tablets);
+        border: transparent;
+        color: var(--primary-color);
+        font-weight: 700;
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .btns:hover{
+        color: white;
+        background-color: var(--primary-color);
+    }
+    
+}
+
+@media (max-width:1020px){
+    
+.right{
+    display: block
+}
+}
+
+@media (max-width:700px){
+.job-container{
+.logo img{
+width: 50px;
+height: 50px;
+}
+}
+}
+@media (max-width:630px){
+span{
+    font-size: 10px;
+}
+.job-container{
+    display: block;
+    margin-top:35px;
+    width: 100%;
+    .logo{
+        height: 0px;
+        width: 0;
+        position: relative;
+        bottom: 50px;
+    }
+}
+.details{
+  width: auto;
+  flex-wrap: wrap;
+}
+hr{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.right{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 10px;
+    justify-content: start;
+}
+.company{
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+.left{
+margin-left: 15px;
+.new,.featured{
+font-size:10px;
+
+}
+.cname{
+    font-size: 12px;
+}
+.position{
+    font-size: 12px;
+}
+}
+}
