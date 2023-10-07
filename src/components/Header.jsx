@@ -1,4 +1,4 @@
-import close from "/public/images/icon-remove.svg"
+import close from "/images/icon-remove.svg"
 const Header = ({keywords,removeKeywords, clearAll}) => {
     return ( 
     <div className="con">
